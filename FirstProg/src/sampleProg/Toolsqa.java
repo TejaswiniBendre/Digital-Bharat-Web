@@ -27,7 +27,10 @@ public class Toolsqa {
 		WebElement Linktest= driver.findElement(By.linkText("Link Test"));
 		Linktest.click();
 		
-		System.out.println("Link Test");
+		System.out.println("Link Test pass");
+		
+		WebElement firstname=driver.findElement(By.name("firstname"));
+		firstname
 
 	}
 
