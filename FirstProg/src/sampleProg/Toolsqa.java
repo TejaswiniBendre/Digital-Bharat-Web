@@ -23,6 +23,12 @@ public class Toolsqa {
 		
 		System.out.println("partial link test pass");
 		
+		driver.navigate().back();
+		
+		//driver.navigate().forward();
+		
+		//driver.navigate().refresh();
+		
 		
 		WebElement Linktest= driver.findElement(By.linkText("Link Test"));
 		Linktest.click();
@@ -30,7 +36,13 @@ public class Toolsqa {
 		System.out.println("Link Test pass");
 		
 		WebElement firstname=driver.findElement(By.name("firstname"));
-		firstname
+		firstname.sendKeys("tejaswini");
+		
+		
+		WebElement Lastname=driver.findElement(By.name("lastname"));
+		Lastname.sendKeys("bendre");
+		
+		
 
 	}
 
