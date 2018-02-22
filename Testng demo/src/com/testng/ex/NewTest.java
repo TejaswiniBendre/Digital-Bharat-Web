@@ -11,7 +11,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
 
 public class NewTest {
-  @Test(priority=3)
+  @Test(invocationCount=2)
   public void test1() {
 	  System.out.println("test1");
   }
@@ -20,7 +20,7 @@ public class NewTest {
   public void test2() {
 	  System.out.println("test2");
 }
-  @Test(priority=2)
+  @Test(invocationCount=3)
   public void test3() {
 	  System.out.println("test3");
 }
