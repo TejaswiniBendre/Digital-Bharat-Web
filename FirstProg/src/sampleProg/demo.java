@@ -16,8 +16,8 @@ public class demo {
 		System.setProperty("webdriver.chrome.driver","C:\\Program Files\\java\\chromedriver.exe");
 		//System.setProperty("webdriver.gecko.driver", "C:\\Program Files\\Java\\geckodriver.exe");
 		WebDriver driver = new ChromeDriver();
+		
 		driver.manage().window().maximize();
-
 		driver.get("https:\\www.facebook.com");
 
 		WebElement email = driver.findElement(By.name("email"));
@@ -62,7 +62,7 @@ public class demo {
 		Select year = new Select(driver.findElement(By.id("year")));
 		year.selectByVisibleText("1994");
 
-		WebElement radioBtn = driver.findElement(By.id("u_0_8"));
+		WebElement radioBtn = driver.findElement(By.id("u_0_b"));
 		radioBtn.click();
 
 		WebElement createaccount = driver.findElement(By.id("u_0_13"));
@@ -71,7 +71,7 @@ public class demo {
 		// String baseUrl=("https\\www.digitalbharatweb.com");
 		// driver.get(baseUrl);
 
-		driver.get("http://www.digitalbharatweb.com/");
+		//driver.get("http://www.digitalbharatweb.com/");
 
 		System.out.println(driver.getTitle());
 

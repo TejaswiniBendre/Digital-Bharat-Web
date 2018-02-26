@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class Toolsqa {
 
@@ -23,7 +25,7 @@ public class Toolsqa {
 		
 		System.out.println("partial link test pass");
 		
-		driver.navigate().back();
+		
 		
 		//driver.navigate().forward();
 		
@@ -35,13 +37,42 @@ public class Toolsqa {
 		
 		System.out.println("Link Test pass");
 		
+		driver.navigate().back();
+		
 		WebElement firstname=driver.findElement(By.name("firstname"));
-		firstname.sendKeys("tejaswini");
+	    firstname.sendKeys("Tejaswini");
 		
 		
-		WebElement Lastname=driver.findElement(By.name("lastname"));
-		Lastname.sendKeys("bendre");
+		WebElement Lastname= driver.findElement(By.name("lastname"));
+		Lastname.sendKeys("Bendre");
 		
+		
+		WebElement radioBtn= driver.findElement(By.id("sex-1"));
+		radioBtn.click();
+		
+		
+		WebElement radioBtn1 = driver.findElement(By.id("exp-3"));
+		radioBtn1.click();
+		
+		
+		WebElement date=driver.findElement(By.id("datepicker"));
+		date.sendKeys("18-02-2018");
+		
+		
+		WebElement check1= driver.findElement(By.id("profession-0"));
+		check1.click();
+		
+		
+		WebElement check3=driver.findElement(By.id("tool-2"));
+		check3.click();
+		
+		
+		Select continents = new Select(driver.findElement(By.id("continents")));
+		continents.selectByVisibleText("Australia");
+		
+		
+		WebElement button=driver.findElement(By.id("submit"));
+		button.click();
 		
 
 	}
