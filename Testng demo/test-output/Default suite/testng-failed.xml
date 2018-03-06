@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testng.ex.NewTest1">
+      <class name="com.testng.ex.linkscounttest">
         <methods>
-          <include name="beforeMethod"/>
           <include name="test1"/>
           <include name="afterMethod"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.testng.ex.NewTest1 -->
+      </class> <!-- com.testng.ex.linkscounttest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
