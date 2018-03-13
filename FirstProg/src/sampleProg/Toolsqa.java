@@ -13,7 +13,7 @@ public class Toolsqa {
 		System.setProperty("webdriver.chrome.driver","C:\\Program Files\\java\\chromedriver.exe");
 		//System.setProperty("webdriver.gecko.driver", "C:\\Program Files\\Java\\geckodriver.exe");
 		
-				WebDriver driver = new ChromeDriver();
+		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		
 		driver.get("http://toolsqa.com/automation-practice-form/");
