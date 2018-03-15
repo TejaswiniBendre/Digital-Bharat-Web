@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="ChromeTest(failed)" parallel="tests">
+    <parameter name="myBrowser" value="chrome"/>
+    <classes>
+      <class name="Paralleltesting.NewTest">
+        <methods>
+          <include name="f"/>
+          <include name="launchbrowser"/>
+        </methods>
+      </class> <!-- Paralleltesting.NewTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" name="FireFoxTest(failed)" parallel="tests">
+    <parameter name="myBrowser" value="firefox"/>
+    <classes>
+      <class name="Paralleltesting.NewTest">
+        <methods>
+          <include name="f"/>
+          <include name="launchbrowser"/>
+        </methods>
+      </class> <!-- Paralleltesting.NewTest -->
+    </classes>
+  </test> <!-- FireFoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

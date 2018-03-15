@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<suite name = "Suite" parallel="tests">
+<test name = "FireFoxTest">
+<parameter name ="myBrowser" value = "firefox"/>
+<classes>
+<class name = "Paralleltesting.NewTest"/>
+
+</classes>
+</test>
+
+<test name = "ChromeTest">
+<parameter name ="myBrowser" value = "chrome"/>
+<classes>
+<class name = "Paralleltesting.NewTest"/>
+
+</classes>
+</test>
+</suite>
